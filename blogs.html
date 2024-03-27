@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <script type="module" crossorigin src="/assets/index-DYyPIps8.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Yz2zmIrx.css">
+    
+</head>
+<style>
+    *, *::after, *::before {
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    :root {
+        --slate-100: rgb(241 245 249);
+        --slate-200: rgb(226 232 240);
+        --slate-300: rgb(203 213 225);
+        --slate-400: rgb(148 163 184);
+        --slate-900: rgb(15 23 42);
+
+        --ltColor: #0ebac5;
+        --ltDark: #012F32;
+    }
+
+    body {
+        background-color: var(--slate-100);
+    }
+
+    .root-container {
+        display: grid;
+        justify-content: center;
+        padding-top: 8em;
+    }
+
+    .heading-text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .card {
+        background-color: #fff;
+    }
+
+    .img-wrapper {
+        width: 100%;
+    }
+
+    .img-wrapper img {
+        aspect-ratio: 9 / 6;
+        width: 100%;
+    }
+
+    .root-container {
+        width: 100vw;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .blog-cover-img-wrapper {
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3em;
+
+        background-image: url("https://raw.githubusercontent.com/alex-anie/nonso-amadi-portfolio/main/public/blogbg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .blog-cover-img-wrapper h1 {
+        margin: 10px 0 ;
+        text-align: center;
+        font-size: 4em;
+        color: white;
+    }
+
+    .blog-cover-img-wrapper a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+
+    .cards-wrapper {
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 300px);
+        gap: 20px;
+        margin-bottom: 2em;
+    }
+
+    .card-content {
+        padding: 5px 20px;
+    }
+
+    .card-content h3 {
+        font-family: calibri;
+        text-align: center;
+    }
+
+    .card-content p {
+        font-family: calibri;
+        font-size: 14px;
+        color: var(--slate-900);
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .card-content a {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        background: var(--ltColor);
+        border-radius: 5px;
+        color: #fff;
+        transition: background 0.5s ease;
+        padding: 10px 0;
+    }
+
+    .card-content a:hover {
+        background-color: black;
+    }
+
+    @media screen and (max-width: 850px) {
+            .cards-wrapper {
+                grid-template-columns: repeat(2, 250px);
+        }
+    }
+
+    @media screen and (max-width: 600px){
+            .cards-wrapper {
+                grid-template-columns: repeat(1, 250px);
+        }
+    }
+</style>
+<body>
+    <main class="logo-container">
+        <header>
+            <nav class="navbar">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="/index.htm">
+                        <h1>Alex</h1>
+                    </a>
+                </div>
+
+                <!-- Nav Links -->
+                <div class="navlinks">
+                    <ul>
+                        <li>
+                            <a href="/index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="index.html#aboutMe">About Me</a>
+                        </li>
+                        <li>
+                            <a href="index.html#servesSection">Services</a>
+                        </li>
+                        <li>
+                            <a href="index.html#workExperince">Experience</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/blogs.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="index.html#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="hamburger-icon-wrapper">
+                    <span class="hamburger-icon"> = </span>
+                </div>
+
+            </nav>
+        </header>
+    </main>
+
+<!-- Footer -->
+<main class="footer-wrapper">
+    <footer>
+        <div class="logo-wrapper">
+            <p class="logo-footer">Alex</p>
+        </div>
+
+        <div class="about-me-footer">
+            <p>Hi, am Alex Anie, A Frontend Developer and Freelancer Technical Writer</p>
+        </div>
+
+        <div class="icon-footer">
+            <a class="circle-bg" href="https://medium.com/@alexanie_" target="_blank">
+                <ion-icon name="logo-medium"></ion-icon>
+            </a>
+
+            <a class="circle-bg" href="https://twitter.com/alexanie_" target="_blank">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+
+            <a class="circle-bg" href="https://www.linkedin.com/in/alexanie/" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+        
+            <a class="circle-bg" href="https://discord.com/channels/@ocxigin" target="_blank">
+                <ion-icon name="logo-discord"></ion-icon>
+            </a>
+
+            <a class="circle-bg" href="https://github.com/alex-anie" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+        </div>
+
+        <div class="copyright">
+           <p> Copyright &copy; 2024, Alex Anie</p>
+        </div>
+    </footer>
+</main>
+
+<!-- Scripts -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="module" src="/main.js"></script>
+
+</body>
+</html>
